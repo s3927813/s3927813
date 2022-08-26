@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Icons Square</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+    <style>
+        body {
+            background-image: url(img/bgimg.png);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .row {
+            width: 700px;
+            px;
+            margin: 10px auto 10px auto;
+        }
+
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<div class="row">
+    <div class="image-container"><img id="icon1" src="img/icon1.png" height="180" width="180" /></div>
+    <div class="image-container"><img id="icon2" src="img/icon2.png" height="180" width="180" /></div>
+    <div class="image-container"><img id="icon3" src="img/icon3.png" height="180" width="180" /></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="icon4" src="img/icon4.png" height="180" width="180" /></div>
+    <div class="image-container"><img id="icon5" src="img/icon5.png" height="180" width="180" /></div>
+    <div class="image-container"><img id="icon6" src="img/icon6.png" height="180" width="180" /></div>
+</div>
+
+<div class="row">
+    <div class="image-container"><img id="icon7" src="img/icon7.png" width="180" /></div>
+    <div class="image-container"><img id="icon8" src="img/icon8.png"width="180" /></div>
+    <div class="image-container"><img id="icon9" src="img/icon9.png" width="180" /></div>
+</div>
+
+<script>
+   var sound1 = new buzz.sound("sound/memory.mp3");
+    var sound2 = new buzz.sound("sound/wheel.mp3");
+    var sound3 = new buzz.sound("sound/laugh.mp3");
+    var sound4 = new buzz.sound("sound/ghost.mp3");
+    var sound5 = new buzz.sound("sound/backpack.mp3");
+    var sound6 = new buzz.sound("sound/icecream.mp3");
+    var sound7 = new buzz.sound("sound/nintendo.mp3");
+    var sound8 = new buzz.sound("sound/swing.mp3");
+    var sound9 = new buzz.sound("sound/cardboard.mp3");
+
+    window.onload = function () {
+        document.getElementById('icon1').addEventListener('click', function() {
+            sound1.play();
+        });
+        document.getElementById('icon2').addEventListener('click', function() {
+            sound2.play();
+        });
+        document.getElementById('icon3').addEventListener('click', function() {
+            sound3.play();
+        });
+        document.getElementById('icon4').addEventListener('click', function() {
+            sound4.play();
+        });
+        document.getElementById('icon5').addEventListener('click', function() {
+            sound5.play();
+        });
+        document.getElementById('icon6').addEventListener('click', function() {
+            sound6.play();
+        });
+        document.getElementById('icon7').addEventListener('click', function() {
+            sound7.play();
+        });
+        document.getElementById('icon8').addEventListener('click', function() {
+            sound8.play();
+        });
+        document.getElementById('icon9').addEventListener('click', function() {
+            sound9.play();
+        });
+    }
+</script>
+
+</body>
+
+</html>
